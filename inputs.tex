@@ -3,12 +3,20 @@
 	\input{#1}
 }
 \newcommand{\inputtip}[1]{
-	\\
+	\vskip 1em
 	\textit{Указание:}
 	\input{#1}
 }
 \newcommand{\inputanswer}[1]{
-	\\
+	\vskip 1em
 	\textit{Ответ:}
 	\input{#1}
+}
+\newcommand{\inputpic}[2]{
+\begin{wrapfigure}{L}{0.3\linewidth} 
+	\includegraphics[width=1\linewidth]
+		{{#1}.pdf}
+	\caption{К задаче #2}
+\end{wrapfigure}
+
 }
